@@ -8,5 +8,5 @@ weight_as_int = int(weight)
 height_as_float = float(height)
 
 BMI = weight_as_int / height_as_float **2
-print("Your BMI is ")
-print(int(BMI))
+BMI_int = int(BMI) 
+print(f"Your BMI is {BMI_int}")
