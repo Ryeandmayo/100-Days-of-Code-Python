@@ -1,8 +1,18 @@
 #Life in Weeks assumes living to 90 years, does not take into account leap years or weeks before next birthday, assumes integer 52 weeks
 
+#First go
+#print("What is your age?")
+# age = input()
+# age_int = int(age)
+# life_in_weeks = (90 - age_int) * 52
+# print(f"You have {life_in_weeks} weeks left to live")
+
+
+#Cleaner version:
 print("What is your age?")
 age = input()
 
-age_int = int(age)
-life_in_weeks = (90 - age_int) * 52
-print(f"You have {life_in_weeks} weeks left to live")
+years = 90 - int(age)
+weeks = years * 52
+
+print(f"You have {weeks} weeks left to live")
