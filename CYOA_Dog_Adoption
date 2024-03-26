@@ -1,0 +1,74 @@
+print('''
+*******************************************************************************
+                        _.--"""--._
+                      .'       '-. `.
+                   __/__    (-.   `\ \
+                  /o `o \      \    \ \
+                 _\__.__/ ))    |    | ;
+            .--;"               |    |  \
+           (    `)              |    |   \
+          _|`---' .'      _,   _|    |    `\
+        '`_\  \     '_,.-';_.-`\|     \     \_
+        .'  '--'---;`  / /     |\     |_..--' \
+                   \'-'.'     .--'.__/    __.-;
+                    `"`      (___...---''`     \
+                             _/_                \
+                            /lcy\
+                            \___/
+
+*******************************************************************************
+''')
+print("Welcome to the Dog Adoption Center.")
+
+print("How many dogs do you want to adopt? 1 or 2?") 
+dogs = int(input())
+
+# 1 dog, Loki the great dane
+if dogs == 1:
+  print("Congratulations, you have adopted Loki the Great Dane!")
+  print("Do you want to take Loki for a walk? Type Y or N")
+  walk = input()
+  
+  if walk == "Y":
+    print("Loki is happy to go on a walk!")
+    
+    print("You walk for some time and you're ready to go home. Loki asks to walk further. Do you acquiesce to Loki's request? Type Y or N")
+    further = input()
+    
+    if further == "Y":
+      print("Loki is satisfied and sleepts well that night. He is happy to be a part of a loving family. Congratulations You Win!")
+      
+    else:
+      print("Loki is sad that you did not want to continue with him. He tears up the couch when you return home. Game Over.")
+  
+      
+  else:
+      print("Loki Grumbles and poops in the house. Game Over.")
+
+
+# 2 dogs, Loki the great dane, and Lucy the Mini Dauschsund
+elif dogs == 2:
+  print("Congratulations, you have adopted Loki the great dane and Lucy the Mini Dauschsund!")
+  
+  print("Who would you like to walk first? Type Loki or Lucy")
+  walk = input()
+  
+  if walk == "Lucy":
+    print("Lucy is happy to go on a walk! Loki grumbles, but hopes he is next")
+
+    print("You walk for some time and you're ready to go home. Lucy agrees and you return home.")
+
+    print("Loki is excitedly awaiting his walk, do you take him immediately or make a snack? Type walk or snack")
+    choice = input()
+
+    if choice == "walk":
+      print("Loki is happy to go on a walk with you! You walk for a while and return home. Lucy is already fast asleep on the couch and Loki curls up next to her. Congratulations, you win!")
+
+    elif choice == "Snack":
+      print("Loki is sad that you did not want to take him. He poops in the house. Game Over.")
+    else:
+      print("Invalid Choices. Game Over.")
+  elif walk == "Loki":
+    print("Loki is happy to go on a walk! Lucy grumbles and pees in the house. Game Over.")
+  else:
+    print("Invalid Choices. Game Over.")
