@@ -1,21 +1,23 @@
 from turtle import Turtle, Screen
 tim = Turtle()
 screen = Screen()
-def move_up():
-    tim.seth(90)
+def move_forward():
+
     tim.forward(10)
-def move_left():
-    tim.seth(180)
-    tim.forward(10)
-def move_down():
-    tim.seth(270)
-    tim.forward(10)
-def move_right():
-    tim.seth(0)
-    tim.forward(10)
+def turn_left():
+    tim.left(10)
+def move_backward():
+    tim.backward(10)
+def turn_right():
+    tim.right(10)
+def clear():
+    screen.resetscreen()
+    tim.teleport(0.00,0.00)
+
 screen.listen()
-screen.onkey(key="w", fun=move_up)
-screen.onkey(key="a", fun=move_left)
-screen.onkey(key="s", fun=move_down)
-screen.onkey(key="d", fun=move_right)
+screen.onkey(key="w", fun=move_forward)
+screen.onkey(key="a", fun=turn_left)
+screen.onkey(key="s", fun=move_backward)
+screen.onkey(key="d", fun=turn_right)
+screen.onkey(key="c", fun=clear)
 screen.exitonclick()
